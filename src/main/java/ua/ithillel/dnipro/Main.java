@@ -49,7 +49,7 @@ public class Main {
         }
 
         //ResultSet получает результирующую таблицу
-        ResultSet rs = st.executeQuery("select * from users");
+        ResultSet rs = st.executeQuery("SELECT * FROM users");
         //Resultset.getMetaData()получаем информацию результирующей т
         int x = rs.getMetaData().getColumnCount();
         while(rs.next()){
